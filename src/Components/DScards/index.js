@@ -4,6 +4,10 @@ import {
   ShoppingCartOutlined,
   ShoppingOutlined,
   UserOutlined,
+  MoneyCollectOutlined,
+  FileDoneOutlined,
+  LineChartOutlined,
+  ProductOutlined
 } from "@ant-design/icons";
 import { Space } from "antd";
 import { useEffect, useState } from "react";
@@ -37,18 +41,18 @@ export const DSCards = () => {
     <div className="dscards">
       <Space direction="horizontal" wrap={true}>
         <DSCard
-          icon={<ShoppingCartOutlined style={style} />}
-          title={"Orders"}
+          icon={<FileDoneOutlined style={style} />}
+          title={"Total Orders"}
           number={orderData}
         />
         <DSCard
           icon={
-            <ShoppingOutlined
+            <MoneyCollectOutlined
               style={{ ...style, backgroundColor: "#ffd4d4", color: "red" }}
             />
           }
-          title={"Inventory"}
-          number={inventoryData}
+          title={"Total Sales"}
+          number={revenueData}
         />
         <DSCard
           icon={
@@ -56,17 +60,17 @@ export const DSCards = () => {
               style={{ ...style, color: "blue", backgroundColor: "#d4eeff" }}
             />
           }
-          title={"Customers"}
+          title={"Total Customer"}
           number={customerData}
         />
         <DSCard
           icon={
-            <DollarCircleOutlined
+            <LineChartOutlined
               style={{ ...style, color: "purple", backgroundColor: "#f2deff" }}
             />
           }
-          title={"Revenue"}
-          number={revenueData}
+          title={"Number Of product Sold"}
+          number={inventoryData}
         />
       </Space>
     </div>

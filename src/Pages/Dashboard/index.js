@@ -7,7 +7,7 @@ export const DashBoard = () => {
   return (
     <div className="dashboard">
       <Space direction="vertical" size={"small"} wrap={true} key={"12"}>
-        <Typography.Title level={3}>DashBoard</Typography.Title>
+        
         <DSCards />
         <Space direction="horizontal" wrap={true} key={"23"}>
           <RecentOrder />

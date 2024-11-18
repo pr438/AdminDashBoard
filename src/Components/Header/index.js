@@ -30,10 +30,11 @@ export const Header = () => {
           size={40}
           alt="Admin Profile Icon"
         />
-      </Space>
-      <Typography.Title level={3} style={{ paddingTop: 10 }}>
-        Admin's DashBoard
+        <Typography.Title level={3} style={{ paddingTop: 10 }}>
+        DashBoard
       </Typography.Title>
+      </Space>
+      
       <Space>
         <Mail />
         <Notification />
